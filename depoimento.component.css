@@ -1,0 +1,51 @@
+/* Style the container with a rounded border, grey background and some padding and margin */
+header {
+    width: 100%;
+    height: 20vh;
+    background: url("https://www.upsa.edu.gh/src/wp-content/uploads/2017/02/88_III_2560_1600.jpg") no-repeat 50% 50%;
+    background-size: cover;   
+}
+.container {
+    border: 2px solid rgba(0, 49, 122, 0.94);
+    background-color: rgba(0, 49, 122, 0.94);
+    border-radius: 5px;
+    padding: 16px;
+    margin: 16px 0;
+  }
+  
+  /* Clear floats after containers */
+  .container::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  /* Float images inside the container to the left. Add a right margin, and style the image as a circle */
+  .container img {
+    float: left;
+    margin-right: 20px;
+    border-radius: 50%;
+  }
+  
+  /* Increase the font-size of a span element */
+  .container span {
+    
+    font-size: 20px;
+    margin-right: 15px;
+  }
+  
+  /* Add media queries for responsiveness. This will center both the text and the image inside the container */
+  @media (max-width: 500px) {
+    .container {
+      text-align: center;
+    }
+  
+    .container img {
+      margin: auto;
+      float: none;
+      display: block;
+    }
+  }
+  .words1{
+    color:white;
+  }
